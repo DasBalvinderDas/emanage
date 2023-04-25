@@ -28,7 +28,38 @@
   </head>
 
   <body style="background-color: #f2f3f8">
-<jsp:include page="my-header.jsp"/>
+  
+  <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark" style="background-color:#004085!important" >
+     <img src="logo2.png" style="width: 15%;">
+     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:white"><c:out value="${sessionScope.storeName}" />
+</span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Logout <span class="sr-only">(current)</span></a>
+          </li>
+<!--           <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown link
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li> -->
+        </ul>
+      </div>
+    </nav>
     
     <div class="container-fluid">
       <div class="row">
@@ -39,38 +70,34 @@
           <div class="card mb-3">
             <div class="card-body">
               <h5>
-              Welcome,
-              </h5>
+                  	<center>E Manage Dashboard </center>
+                  </h5>
             </div>
           </div> 
 
           <div class="row justify-content-center">
             
-            <div class="col-md-4">
+            <div class="col-md-12">
               <div class="card">
 
                 <!-- <div class="card-header">
                 </div> -->
 
                 <div class="card-body">
-                  <h5>
-                  TODAY'S STATS
-                  </h5>
 
-                  Today earnings and items sales <br><br>
-                  Earning: $400 USD<br>
-                  Items Sold: 20 Items<br>
-                  Last Hour Sales: $34 USD<br>
-
+				<iframe width="1200" height="600" src="https://lookerstudio.google.com/embed/reporting/d7d9ccb6-0bc1-413f-bc3c-49e377d3ebb4/page/p_2pk0cjpa5c" frameborder="0" style="border:0" allowfullscreen></iframe>	
+                  
                 </div>
               </div>
             </div>
+            
+            <!-- 
               
             <div class="col-md-4">
               <div class="card">
 
-                <!-- <div class="card-header">
-                </div> -->
+                <div class="card-header">
+                </div>
 
                 <div class="card-body">
                   <h5>
@@ -89,8 +116,8 @@
             <div class="col-md-4">
               <div class="card">
 
-                <!-- <div class="card-header">
-                </div> -->
+                <div class="card-header">
+                </div>
 
                 <div class="card-body">
                   <h5>
@@ -105,6 +132,8 @@
                 </div>
               </div>
             </div>
+
+-->
 
           </div>
 
